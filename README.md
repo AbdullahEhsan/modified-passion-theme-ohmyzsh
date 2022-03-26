@@ -30,7 +30,7 @@ git clone https://github.com/AbdullahEhsan/passion-theme-ohmyzsh.git $ZSH_CUSTOM
 ```
 2. Symlink
 ```
-ln -s $ZSH_CUSTOM/themes/passion-modifed/passion.zsh-theme $ZSH_CUSTOM/themes/passion-modified.zsh-theme
+ln -s $ZSH_CUSTOM/themes/passion-modifed/passion-modified.zsh-theme $ZSH_CUSTOM/themes/passion-modified.zsh-theme
 ```
 3. Set in ~/.zshrc (replace existing)
 ```
