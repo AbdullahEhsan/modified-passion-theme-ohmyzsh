@@ -47,6 +47,9 @@ function login_info() {
     echo "${color}[%n@${ip}]${color_reset}";
 }
 
+function user_info() {
+    echo "%{$fg_no_bold[green]%}[%n]%{$reset_color%}"
+}
 
 # directory
 function directory() {
@@ -209,5 +212,5 @@ TRAPALRM() {
 
 
 # prompt
-# PROMPT='$(real_time) $(login_info) $(directory) $(git_status)$(command_status) ';
-PROMPT='$(real_time) $(directory) $(git_status)$(command_status) ';
+#PROMPT='$(real_time) $(login_info) $(directory) $(git_status)$(command_status) ';
+PROMPT='$(real_time) $(user_info) $(directory) $(git_status)$(command_status) ';
