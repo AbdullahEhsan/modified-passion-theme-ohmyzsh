@@ -135,7 +135,7 @@ output_command_execute_after() {
     local color_cost="$fg_no_bold[cyan]";
     cost="${color_cost}${cost}${color_reset}";
 
-    echo -e "${time} ${cost} ${cmd}";
+    echo -e "╰─${time} ${cost} ${cmd}";
     echo -e "";
 }
 
@@ -213,4 +213,5 @@ TRAPALRM() {
 
 # prompt
 #PROMPT='$(real_time) $(login_info) $(directory) $(git_status)$(command_status) ';
-PROMPT='$(real_time) $(user_info) $(directory) $(git_status)$(command_status) ';
+PROMPT='╭─$(real_time) $(user_info) $(directory)
+╰─$(git_status)$(command_status) ';
